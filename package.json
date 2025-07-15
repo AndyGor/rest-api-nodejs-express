@@ -1,0 +1,31 @@
+{
+  "name": "rest-api-nodejs-express",
+  "version": "1.0.0",
+  "description": "A REST API with NodeJS and Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndyGor/rest-api-nodejs-express.git"
+  },
+  "author": "Andrii Horetskyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndyGor/rest-api-nodejs-express/issues"
+  },
+  "homepage": "https://github.com/AndyGor/rest-api-nodejs-express#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.3",
+    "nodemon": "^3.1.10"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.28.0",
+    "@babel/core": "^7.28.0",
+    "@babel/node": "^7.28.0",
+    "@babel/preset-env": "^7.28.0"
+  }
+}
