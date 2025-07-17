@@ -1,21 +1,17 @@
+import {addNewContact, getContacts, getContactById, updateContact, deleteContact} from "../controllers/restController";
+
 const routes = (app) => {
     app.route('/contact')
-        .get((req, res) => {
-            res.send('GET request successfully');
-        })
+        .get(getContacts)
 
-        .post((req, res) => {
-            res.send('POST request successfully');
-        })
+        .post(addNewContact)
 
     app.route('/contact/:contactId')
-        .put((req, res) => {
-            res.send('PUT request successfully');
-        })
+        .get(getContactById)
 
-        .delete((req, res) => {
-            res.send('DELETE request successfully');
-        })
+        .put(updateContact)
+
+        .delete(deleteContact)
 }
 
 export default routes;
